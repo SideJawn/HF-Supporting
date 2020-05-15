@@ -28,7 +28,7 @@ server {
   location ~ /(assets/image|_include|style|lib|js|css|flash|media|static|.html$|.ttf$|.woff$|.ico$) {
     root  /opt/apps/nginx/html/honestreviews-dev.com;
     access_log  off;
-    #expires 30d;
+    expires 30d;
   }
 
   ## Proxy setting for the backend API (such ask flask).
